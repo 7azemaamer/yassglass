@@ -1,0 +1,141 @@
+.contact {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../../Assets/Images/contact.jpeg);
+  min-height: 90vh;
+  mix-blend-mode: darken;
+  background-size: cover;
+  object-fit: cover;
+}
+.contact > div {
+  padding: 50px 150px !important;
+}
+
+.box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 280px;
+  height: 240px;
+}
+
+.box {
+  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box .icon {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+}
+.box .icon i {
+  font-size: 60px;
+  background: linear-gradient(#2581bd, #135179);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box h5 {
+  margin-top: 15px;
+  color: #696969;
+}
+.box p {
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+}
+.input,
+.textarea {
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  box-shadow: 0px 16px 17.2px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 21px;
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+}
+.textarea {
+  padding-top: 20px;
+  height: 200px;
+}
+.input::placeholder,
+.textarea::placeholder {
+  color: #135179;
+}
+.input:focus,
+textarea:focus {
+  outline: 3px solid #135179;
+}
+.button {
+  color: #2980b9;
+  border: none;
+  padding: 5px 80px;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 33px;
+  border: 5px solid #2980b9;
+  background: #fff;
+}
+.social-media {
+  flex-direction: column;
+  background-color: #2980b9;
+  border-radius: 50px;
+  padding: 30px 15px;
+}
+.social-media i {
+  padding-top: 5px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+@media only screen and (min-width: 701px) and (max-width: 1030px) {
+  .box {
+    width: 280px;
+    height: 240px;
+  }
+  .contact {
+    padding: 0;
+  }
+  .contact > div {
+    padding: 50px !important;
+  }
+  .form {
+    width: 80%;
+  }
+  .form-wrapper {
+    justify-content: center;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .box {
+    width: 280px;
+    height: 240px;
+  }
+  .contact {
+    padding: 0;
+  }
+  .contact > div {
+    padding: 50px !important;
+    gap: 40px;
+  }
+  .form {
+    width: 100%;
+  }
+  .form-wrapper {
+    margin-top: 100px;
+  }
+  .social-media {
+    flex-direction: row;
+    display: flex;
+  }
+  .social-media i {
+    padding-top: 0;
+    padding-left: 10px;
+  }
+}

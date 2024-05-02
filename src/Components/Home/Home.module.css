@@ -1,0 +1,340 @@
+/* Home Section */
+
+.btn-send {
+  position: relative;
+  font-size: 40px;
+  border-radius: 33px;
+  width: 397px !important;
+  opacity: 1;
+  z-index: 3;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-send:hover {
+  background-color: #1a1a1a !important;
+}
+.homeo {
+  position: relative;
+  height: calc(981px / 1.5);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../Assets/Images/bg-home.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.05;
+  z-index: 2;
+}
+
+.overlay {
+  z-index: 1;
+}
+.homeo .overlay {
+  background-image: linear-gradient(
+      rgba(20, 100, 174, 0.83),
+      rgba(8, 42, 72, 0.83)
+    ),
+    url(../../Assets/Images/bg-main-home.png);
+  height: calc(981px / 1.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top {
+  margin-top: 130px;
+  margin-left: 115px;
+}
+.top .title {
+  max-width: 788px;
+  font-size: 96px;
+  color: white;
+  line-height: 115.1px;
+}
+.top .description {
+  font-size: 36px;
+  max-width: 1199px;
+  line-height: 43.16px;
+}
+
+/*Services*/
+.services-overlay {
+  background-image: linear-gradient(
+      rgba(20, 83, 124, 0.8),
+      rgba(37, 128, 189, 0.8)
+    ),
+    url(../../Assets/Images/bg-after-home.jpeg);
+}
+.services-overlay .text {
+  margin-left: 115px;
+  margin-top: 50px;
+  color: white;
+}
+.services-overlay .text h3 {
+  max-width: 1006px;
+  font-size: 75px;
+  font-weight: 500;
+}
+.services-overlay .text p {
+  max-width: 1133px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48.41px;
+}
+.services-overlay img {
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+/* Services cards */
+
+.single-image {
+  width: 500px !important;
+  max-height: 335.28px;
+  object-fit: cover;
+  background-size: cover;
+}
+/*logos section*/
+.logos {
+  background-image: linear-gradient(
+      rgba(20, 100, 174, 0.9),
+      rgba(8, 42, 72, 0.9)
+    ),
+    url(../../Assets/Images/bg-logo.jpeg);
+  background-size: cover;
+}
+.logo-title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+/* Video Section */
+.video {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(../../Assets/Images/bg-video.jpeg);
+  background-size: cover;
+}
+.vid-btn {
+  background-color: #2f2f2f;
+  width: 500px;
+  height: 350px;
+}
+.vid-btn i {
+  font-size: 80px;
+  color: white;
+}
+.vid-text {
+  color: black;
+}
+.vid-text h3 {
+  font-size: 80px;
+  font-weight: 700;
+}
+.vid-text p {
+  font-size: 30px;
+}
+.divider {
+  background-color: #1e6fa4;
+  height: 43px;
+  width: 100%;
+}
+/*facades Section*/
+.facades .titles {
+  text-align: center;
+}
+.facades .titles h6 {
+  color: #1b6ea5;
+  font-weight: 500;
+  font-size: 24px;
+}
+.facades .titles h3 {
+  color: black;
+  font-weight: 700;
+  font-size: 80px;
+}
+.facades .titles p {
+  color: #a3a3a3;
+  font-size: 64px;
+}
+.facades .row {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*Responsive Mobile*/
+
+@media only screen and (max-width: 700px) {
+  .homeo .overlay {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+  }
+  .top .title,
+  .services-overlay .text h3,
+  .logo-title {
+    font-size: 35px;
+    color: white;
+    line-height: 38px;
+  }
+  .top .description,
+  .services-overlay .text p,
+  .vid-text p {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+  }
+  .btn-send {
+    font-size: 28px;
+    border-radius: 33px;
+  }
+  .services-overlay .text {
+    margin: 25px;
+    padding: 0;
+  }
+  .services-overlay {
+    flex-direction: column;
+  }
+  .services-overlay > div:nth-child(2) {
+    margin-top: -100px;
+  }
+  .single-image {
+    width: 350px !important;
+    max-height: 335.28px;
+    object-fit: cover;
+    background-size: cover;
+  }
+  .tslide {
+    gap: 15px 10px;
+  }
+
+  .logo-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .vid-text h3 {
+    font-size: 35px;
+    line-height: 38px;
+    margin-top: 25px;
+  }
+  .facades {
+    margin: 25px;
+  }
+  .facades .titles p {
+    font-size: 20px;
+  }
+  .shower h3,
+  .mirros h3,
+  .glass h3 {
+    font-size: 35px;
+  }
+  .shower p,
+  .mirros p,
+  .glass p {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1030px) {
+  .homeo .overlay {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+  }
+
+  .top .title,
+  .services-overlay .text h3,
+  .logo-title {
+    font-size: 90px;
+    color: white;
+    line-height: 90px;
+  }
+  .top .description,
+  .services-overlay .text p,
+  .vid-text p {
+    margin-top: 25px;
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 788px;
+  }
+  .bottom {
+    justify-content: center !important;
+    margin: 0 50px;
+  }
+  .single-image {
+    width: 350px !important;
+    height: 300px;
+    object-fit: cover;
+    background-size: cover;
+  }
+  .hyde img {
+    width: 100% !important;
+    scale: 1.2;
+  }
+  .vid-btn {
+    width: 600px ;
+    height: 400px;
+  }
+  .vid-text{
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .vid-text p{
+    width: 100%;
+    margin: 0;
+  }
+  .facades {
+    margin: 25px;
+  }
+  .facades .titles p {
+    font-size: 30px;
+  }
+  .shower h3,
+  .mirros h3,
+  .glass h3 {
+    font-size: 90px;
+  }
+  .shower p,
+  .mirros p,
+  .glass p {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .bottom {
+    justify-content: end !important;
+  }
+}

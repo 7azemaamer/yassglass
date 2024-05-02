@@ -1,0 +1,63 @@
+.faq {
+  background-image: url(../../Assets/Images/faqs.jpeg);
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: repeat;
+}
+.overlay {
+  background-color: rgba(18, 18, 18, 0.9);
+  width: 100%;
+  min-height: 100vh;
+}
+.container {
+  padding: 100px 300px;
+  border-radius: 33px;
+}
+.title button {
+  font-size: 40px !important;
+  font-weight: 700;
+  color: white !important;
+  text-transform: capitalize;
+}
+.tbody {
+  font-size: 26px;
+  text-transform: capitalize;
+}
+.title button::after {
+  content: "";
+  display: inline-block !important;
+  width: 20px !important;
+  height: 20px !important;
+  background: linear-gradient(rgba(18, 78, 117, 0.4), rgba(38, 131, 193, 0.4)),
+    url(../../Assets/Images/iconup.svg) !important;
+  color: white !important;
+  rotate: 180deg;
+  padding: 15px !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: 50% !important;
+  transform: var(--bs-accordion-btn-icon-transform) !important;
+}
+@media only screen and (min-width: 701px) and (max-width: 1030px) {
+  .container {
+    padding: 50px;
+  }
+  .tbody {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .container {
+    padding: 25px;
+  }
+  .title button {
+    font-size: 30px !important;
+  }
+  .tbody {
+    font-size: 22px;
+  }
+}
