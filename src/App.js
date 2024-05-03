@@ -1,11 +1,15 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createHashRouter,
+} from "react-router-dom"
 import Layout from "./Components/Layout/Layout"
 import Home from "./Components/Home/Home"
 import NotFound from "./Components/NotFound/NotFound"
 import ContactUs from "./Components/ContactUS/ContactUS"
 import FAQ from "./Components/FAQ/FAQ"
 
-let routers = createBrowserRouter([
+let routers = createHashRouter([
   {
     path: "/",
     element: <Layout />,
